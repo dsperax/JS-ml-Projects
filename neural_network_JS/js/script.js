@@ -117,37 +117,37 @@ var norm_y = _CANVAS_HEIGHT / 2;
 
 function Network(params) {
 
-    // Required variables: lr, layers
+    // Variáveis requisitadas: lr, layers
     this.params = params;
 
-    this.lr = undefined; // Learning rate
+    this.lr = undefined; // Taxa de aprendizado
     this.layers = undefined;
-    this.optimizer = undefined; // must bin included in _AVAILABLE_OPTIMIZER
-    this.optimizerParams = undefined; // example: momentum rate will be {alpha: X}
-    this.activation = undefined; // activation function for hidden layer
+    this.optimizer = undefined; // Deve ser incuído em _AVAILABLE_OPTIMIZER
+    this.optimizerParams = undefined; // exemplo: a taxa de momentum será {alpha: X}
+    this.activation = undefined; // função de ativação para camada oculta
     this.activationParams = undefined;
 
     this.neurons = undefined;
     this.weights = undefined;
-    this.momentums = undefined; // momentums coefficients a t-1
-    this.gradients = undefined; // gradients squared for Adagrad 
-    this.output = undefined; // current output array
+    this.momentums = undefined; // coeficientes de momentums a t-1
+    this.gradients = undefined; // gradientes quadrados para Adagrad 
+    this.output = undefined; // matriz de saída atual
 
-    // Caching variables:
+    // Variáveis de cache:
     this.layersSum = undefined;
     this.layersMul = undefined;
     this.nbLayers = undefined;
     this.nbNeurons = undefined;
     this.nbWeights = undefined;
 
-    // Stats-purpose:
+    // Objetivo das estatísticas:
     this.iterations = 0;
     this.maxWeight = 0;
     this.outputError = 0;
     this.globalError = 0;
     this.avgWeightsPerNeuron = 0;
 
-    // Visualization:
+    // Visualização:
     this.svgVisualization = false;
     this.DOM = {
         svg: undefined,
@@ -160,7 +160,7 @@ function Network(params) {
         weightCurves: undefined
     };
 
-    // Necessary for avoiding problems with Cross Origin (Web Worker)
+    // Necessário para evitar problemas com Cross Origin (Web Worker)
     this.libURI = undefined;
 
     this.loadParams(params);
