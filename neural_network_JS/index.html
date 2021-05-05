@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisrt A.I.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+    <script src="js/learning-data.js"></script>
+    <script src="js/neural-network.js"></script>
+</head>
+
+<body>
+    <h1>Percepção de mouse com JS</h1>
+
+    <p>O circulo aprende a seguir o mouse.</p>
+
+    <canvas id="playground"></canvas>
+    <p>
+        <span id="global_error">Erro global: <span></span></span>
+        <input id="backpropagate" name="backpropagate" type="checkbox" checked />
+        <label for="backpropagate">Retropropagação</label>
+    </p>
+    <p>
+        <button id="train">Ensinar</button>
+        <button id="dropout">Desaprender</button>
+    </p>
+</body>
+
+</html>
