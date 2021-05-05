@@ -22,3 +22,9 @@ Line 18 - Neural network.
 
 - On neural-lib folder;
 - [Library](https://franpapers.com/lib/neural-network-241117.js).
+
+<hr>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/76974801/117084181-ea81d980-ad1c-11eb-8622-708d8187dad5.png" alt="Neural Network and a grey canva"/>
+</p>
