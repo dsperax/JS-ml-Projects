@@ -1,6 +1,6 @@
 ## Projects :robot:
 
-### JavaScript
+### ML with JavaScript
 
 <hr>
 
